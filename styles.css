@@ -34,7 +34,7 @@ section{
     left: 0;
     width: 100%;
     padding: 2rem 9%;
-    background: var(--bg-color);
+    background: var(--snd-bg-color);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -96,7 +96,7 @@ span{
 }
 
 /*  this is for image floating */
-@keyframes floatImage{
+/* @keyframes floatImage{
     0%{
         transform: translateY(0);
     }
@@ -106,7 +106,7 @@ span{
     100%{
         transform: translateY(0);
     }
-}
+} */
 
 .home-content p{
     font-size: 1.6rem;
@@ -181,8 +181,11 @@ span{
     display: flex;
 
 }
+.service{
+    min-height: 80vh;
+}
 .service h2{
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
 }
 .service-container{
     display: flex;
@@ -190,9 +193,10 @@ span{
     align-items: center;
     flex-wrap: wrap;
     gap: 2rem;
+    
 }
 .service-container .service-box{
-    flex: 1 1 30rem;
+    flex: 1 1 20rem;
     background: var(--snd-bg-color);
     padding: 3rem 2rem 4rem;
     border-radius: 2rem;
@@ -216,6 +220,120 @@ span{
     font-size: 1.5rem;
     margin: 1rem 0 3rem;
 }
+
+/* skill bars section start */
+.container1{
+    min-height: 100vh;
+    padding: 45px;
+    border: 2px solid var(--text-color);
+}
+.bar{
+    font-size: 50px;
+    color: var(--text-color);
+}
+.Technical-bars .bar{
+    margin-top: 40px 0;
+}
+.Technical-bars .bar:first-child{
+    margin-top: 0;
+}
+.Technical-bars .bar:last-child{
+    margin-bottom: 0;
+}
+.Technical-bars .bar .info{
+    margin-bottom: 5px;
+}
+.Technical-bars .bar .info span{
+    font-size: 2.5rem;
+    font-weight: 500;
+    animation: showText 0.5s 1s linear forwards;
+    opacity: 0;
+}
+.Technical-bars .bar .progress-line{
+    position: relative;
+    border-radius: 10px;
+    width: 100%;
+    height: 10px;
+    background-color: var(--text-color);
+    animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+@keyframes animate{
+    100%{
+        transform: scaleX(1);
+    }
+}
+.Technical-bars .bar .progress-line span{
+    height: 100%;
+    background-color: var(--main-color);
+    position: absolute;
+    border-radius: 10px;
+    animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+.progress-line.html span{
+    width: 90%;
+}
+.progress-line.css span{
+    width: 80%;
+}
+.progress-line.javaScript span{
+    width: 70%;
+}
+.progress-line.java span{
+    width: 65%;
+}
+.progress-line.react span{
+    width: 50%;
+}
+.progress-line span::after{
+    position: absolute;
+    padding: 1px 8px;
+    font-size: 2.5rem;
+    border-radius: 3px;
+    top: -40px;
+    right: -20px;
+    animation: showText 0.5s 1.5s linear forwards;
+    opacity: 0;
+}
+.progress-line.html span::after{
+    content: "90%";
+}
+.progress-line.css span::after{
+    content: "80%";
+}
+.progress-line.javaScript span::after{
+    content: "70%";
+}
+.progress-line.java span::after{
+    content: "65%";
+}
+.progress-line.react span::after{
+    content: "50%";
+}
+.progress-line span::before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 7px solid transparent;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    border-top-color: #000;
+    top: -10px;
+    right: 0;
+    animation: showText 0.5s 1.5s linear forwards;
+    opacity: 0;
+}
+@keyframes showText{
+    100%{
+        opacity: 1;
+    }
+}
+
+/* skill bars section end */
 
 .portfolio{
     background: var(--snd-bg-color);
