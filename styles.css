@@ -26,7 +26,7 @@ body{
 }
 section{
     min-height: 100vh;
-    padding: 10rem 9% 2rem;
+    padding: 5rem 7% 2rem;
 }
 .header{
     position:fixed;
@@ -182,7 +182,7 @@ span{
 
 }
 .service{
-    min-height: 80vh;
+    min-height: 50vh;
 }
 .service h2{
     margin-bottom: 2rem;
@@ -221,18 +221,39 @@ span{
     margin: 1rem 0 3rem;
 }
 
-/* skill bars section start */
-.container1{
-    min-height: 100vh;
-    padding: 45px;
-    border: 2px solid var(--text-color);
+
+/* updated skills bar css start */
+.skills{
+    min-height: 75vh;
+}
+.skills h2 {
+    margin-bottom: 2rem;
+}
+.skill-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    
+}
+.skill-container .skill-box{
+    flex: 1 1 20rem;
+    background: var(--snd-bg-color);
+    padding: 3rem 2rem 4rem;
+    border-radius: 2rem;
+    border: .2rem solid var(--bg-color); 
+    transition: .5s ease;
+}
+.skill-container .skill-box:hover{
+    transform: scale(1.02);
 }
 .bar{
-    font-size: 50px;
+    font-size: 10px;
     color: var(--text-color);
 }
 .Technical-bars .bar{
-    margin-top: 40px 0;
+    margin-top: 10px 0;
 }
 .Technical-bars .bar:first-child{
     margin-top: 0;
@@ -244,8 +265,8 @@ span{
     margin-bottom: 5px;
 }
 .Technical-bars .bar .info span{
-    font-size: 2.5rem;
-    font-weight: 500;
+    font-size: 1.5rem;
+    font-weight: 800;
     animation: showText 0.5s 1s linear forwards;
     opacity: 0;
 }
@@ -291,9 +312,9 @@ span{
 .progress-line span::after{
     position: absolute;
     padding: 1px 8px;
-    font-size: 2.5rem;
+    font-size: 2rem;
     border-radius: 3px;
-    top: -40px;
+    top: -30px;
     right: -20px;
     animation: showText 0.5s 1.5s linear forwards;
     opacity: 0;
@@ -313,27 +334,13 @@ span{
 .progress-line.react span::after{
     content: "50%";
 }
-.progress-line span::before{
-    content: "";
-    position: absolute;
-    width: 0;
-    height: 0;
-    border: 7px solid transparent;
-    border-bottom-width: 0px;
-    border-right-width: 0px;
-    border-top-color: #000;
-    top: -10px;
-    right: 0;
-    animation: showText 0.5s 1.5s linear forwards;
-    opacity: 0;
-}
 @keyframes showText{
     100%{
         opacity: 1;
     }
 }
 
-/* skill bars section end */
+/* updated skills bar css ends */
 
 .portfolio{
     background: var(--snd-bg-color);
