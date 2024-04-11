@@ -151,6 +151,7 @@ span{
     align-items: center;
     gap: 5rem;
     background:var(--snd-bg-color);
+    min-height: 70vh;
 }
 .about-img img{
     width: 25vw;
@@ -344,6 +345,7 @@ span{
 
 .portfolio{
     background: var(--snd-bg-color);
+    min-height: 60vh;
 
 }
 .portfolio h2{
