@@ -81,6 +81,7 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 2rem;
 
 }
 .home-content h3{
@@ -101,12 +102,15 @@ span{
 .home-img img{
     width: 30vw;
     /* height: 30vh; */
-    margin-left: .8rem;
+    /* margin-left: .8rem; */
     animation: floatImage 4s ease-in-out infinite;
-    border-radius: 50%;
+    border-radius:7%;
     border: .4rem solid var(--main-color);
-
 }
+/* .home-img img{
+    width: 30vw;
+    border-radius: 7%;
+} */
 
 /*  this is for image floating */
 /* @keyframes floatImage{
@@ -546,6 +550,7 @@ span{
     }
     .home {
         flex-direction: column;
+        /* max-height: 150rem; */
     }
     .home-content h3 {
         font-size: 2.6rem;
@@ -559,11 +564,12 @@ span{
     }
     .home-img img {
         width: 70vw;
-        margin-top: 4rem;
+        margin-top: 0.1rem;
     }
     .about{
         flex-direction: column;  
-        margin-top: -1rem;
+        /* margin-top: -4rem; */
+        max-height: 30rem;
     }
     .about-content h2{
         text-align: center;
@@ -584,7 +590,35 @@ span{
 
     }
     .portfolio-container{
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .service-container .service-box{
+        flex: 1 1 50rem;    
+        padding: 3rem 2rem 4rem;
+        /* border: .2rem solid red;  */
+    }
+
+    .skills{
+        min-height: 75vh;
+    }
+    .skills h2 {
+        margin-bottom: 2rem;
+    }
+    .skill-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 2rem;
+        
+    }
+    .skill-container .skill-box{
+        flex: 1 1 50rem;
+        background: var(--snd-bg-color);
+        padding: 3rem 2rem 4rem;
+        border-radius: 2rem;
+        border: .2rem solid var(--bg-color); 
+        transition: .5s ease;
     }
     
 }
@@ -597,20 +631,29 @@ span{
         margin-top: 8rem;
     }
     .about-img img{
-        width: 100vw;
-        margin-top: 4rem;
         display: none;
-
     }
+    .service{
+        padding: 0;
+    }
+    .service-container{
+        width: 100%;
+    }
+    .service-container .service-box{
+        flex: 1 1 40rem;
+    }
+    
 
 }
-@media(max-width:450px){
+@media(max-width:490px){
     html{
         font-size:50%
     }
     .contact form .input-box input{
         width: 100%;
     }
+    
+  
 }
 
 
