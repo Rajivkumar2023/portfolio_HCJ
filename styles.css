@@ -46,7 +46,7 @@ section{
     top: 0;
     left: 0;
     width: 100%;
-    padding: 2rem 9%;
+    padding: 2rem 5%;
     background: var(--snd-bg-color);
     display: flex;
     justify-content: space-between;
@@ -549,6 +549,7 @@ span{
         margin: 3rem 0;
     }
     .home {
+        width: 100%;
         flex-direction: column;
         /* max-height: 150rem; */
     }
@@ -564,7 +565,7 @@ span{
     }
     .home-img img {
         width: 70vw;
-        margin-top: 0.1rem;
+        margin-bottom: 5rem;
     }
     .about{
         flex-direction: column;  
@@ -628,7 +629,7 @@ span{
     }
     .home-img img{
         width: 80vw;
-        margin-top: 8rem;
+        /* margin-top: 8rem; */
     }
     .about-img img{
         display: none;
