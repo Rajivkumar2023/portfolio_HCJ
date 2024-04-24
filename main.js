@@ -55,3 +55,15 @@ const typed = new Typed('.multiple-text', {
     backDeley:1000,
     loop:true,
 })
+
+
+// ===================   Dark mode  ========///
+var icon = document.getElementById("darkmode");
+icon.onclick = function(){
+    document.body.classList.toggle("dark-theme");
+    if(document.body.classList.contains("dark-theme")){
+        icon.src = "images/moon.png";
+    }else{
+        icon.src = "images/sun.png";
+    }
+}

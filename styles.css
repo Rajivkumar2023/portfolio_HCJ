@@ -13,9 +13,22 @@
 :root{
     --bg-color:#191f36;
     --snd-bg-color:#262840;
-    --text-color:#fff;
+    --text-color:#fff;   
     --main-color:yellowgreen;
 }
+/* css code for dark mode */
+.dark-theme{
+    --bg-color: #fff;
+    --snd-bg-color:#ffff;
+    --text-color:#191f36;
+    --main-color:yellowgreen;
+}
+.header #darkmode {
+    width: 25px;
+    cursor: pointer;
+    margin-left: 4rem;
+}
+
 html{
     font-size: 62.5%;
     overflow-x: hidden;
@@ -436,6 +449,7 @@ span{
     font-size: 1.6rem;
     color: var(--text-color);
     background: var(--snd-bg-color);
+    border: 1px solid var(--text-color);
     border-radius: .8rem;
     margin: .7rem 0;
 }
