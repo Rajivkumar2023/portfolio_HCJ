@@ -255,6 +255,11 @@ span{
     gap: 2rem;
     
 }
+.skill-heading{
+    text-align: center;
+    font-size: 2.5rem;
+    border-bottom: 1px solid var(--main-color);
+}
 .skill-container .skill-box{
     flex: 1 1 20rem;
     background: var(--snd-bg-color);
@@ -321,12 +326,35 @@ span{
 .progress-line.javaScript span{
     width: 70%;
 }
-.progress-line.java span{
+.progress-line.php span{
     width: 65%;
 }
-.progress-line.react span{
+.progress-line.python span{
     width: 50%;
 }
+.progress-line.typescript span{
+    width: 40%;
+}
+/* for database and framworks */
+.progress-line.sql span{
+    width: 45%;
+}
+.progress-line.mongodb span{
+    width: 70%;
+}
+.progress-line.react span{
+    width: 45%;
+}
+.progress-line.angular span{
+    width: 30%;
+}
+.progress-line.express span{
+    width: 45%;
+}
+.progress-line.django span{
+    width: 30%;
+}
+
 .progress-line span::after{
     position: absolute;
     padding: 1px 8px;
@@ -346,11 +374,32 @@ span{
 .progress-line.javaScript span::after{
     content: "70%";
 }
-.progress-line.java span::after{
+.progress-line.php span::after{
     content: "65%";
 }
-.progress-line.react span::after{
+.progress-line.python span::after{
     content: "50%";
+}
+.progress-line.typescript span::after{
+    content: "40%";
+}
+.progress-line.sql span::after{
+    content: "45%";
+}
+.progress-line.mongodb span::after{
+    content: "70%";
+}
+.progress-line.react span::after{
+    content: "45%";
+}
+.progress-line.angular span::after{
+    content: "30%";
+}
+.progress-line.express span::after{
+    content: "45%";
+}
+.progress-line.django span::after{
+    content: "30%";
 }
 @keyframes showText{
     100%{
