@@ -471,13 +471,14 @@ span{
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 5rem;
+    width: 12rem;
     background: var(--text-color);
-    border-radius: 50%;
+    border-radius: 20px;
 }
 .portfolio-layer i {
-    font-size: 3rem;
-    color: var(--snd-bg-color);
+    font-size: 2rem;
+    color: var(--bg-color);
+    font-weight: 800;
 }
 
 /*  css for contact */
