@@ -44,7 +44,7 @@ ScrollReveal({
 // Check if the screen width is greater than a certain threshold (e.g., 768 pixels for tablets)
 if (window.innerWidth > 768) {
     // Initialize ScrollReveal for animations
-    ScrollReveal().reveal('.home-img, .service-container, .portfolio-box, .contact form', { origin: 'top'});
+    ScrollReveal().reveal('.home-img, .service-container, .project-box, .contact form', { origin: 'top'});
     ScrollReveal().reveal('.home-contact h1, .about-img', { origin: 'left'});
     ScrollReveal().reveal('.home-contact p, .about-content', { origin: 'right'});
     ScrollReveal().reveal('.skills, .skills h2, .skill-container, .skill-heading', { origin:'left'});

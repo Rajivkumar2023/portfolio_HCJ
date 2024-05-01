@@ -409,36 +409,36 @@ span{
 
 /* updated skills bar css ends */
 
-.portfolio{
+.project{
     background: var(--snd-bg-color);
     min-height: 60vh;
 
 }
-.portfolio h2{
+.project h2{
     margin-bottom: 4rem;
 }
-.portfolio-container{
+.project-container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
     gap: 2.5rem;
 }
-.portfolio-container .portfolio-box{
+.project-container .project-box{
     position: relative;
     border-radius: 2rem;
     box-shadow: 0 0 1rem var(--bg-color);
     overflow: hidden;
     display: flex;
 }
-.portfolio-box img{
+.project-box img{
     width: 100%;
     transition: .5s ease;
     opacity: 0.7;
 }
-.portfolio-box:hover img{
+.project-box:hover img{
     transform: scale(1.1);
 }
-.portfolio-box .portfolio-layer{
+.project-box .project-layer{
     position: absolute;
     bottom: 0;
     left: 0;
@@ -454,20 +454,20 @@ span{
     transform: translateY(100%);
     transition: .5s ease;
 }
-.portfolio-box:hover .portfolio-layer{
+.project-box:hover .project-layer{
     transform: translateY(0);
     background: var(--main-color);
     opacity: 0.7;
     color: var(--bg-color);
 }
-.portfolio-layer h4{
+.project-layer h4{
     font-size: 3rem;
 }
-.portfolio-layer p{
+.project-layer p{
     font-size: 2rem;
     margin: .3rem 0 1rem;
 }
-.portfolio-layer a {
+.project-layer a {
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -475,7 +475,7 @@ span{
     background: var(--text-color);
     border-radius: 20px;
 }
-.portfolio-layer i {
+.project-layer i {
     font-size: 2rem;
     color: var(--bg-color);
     font-weight: 800;
@@ -565,7 +565,7 @@ span{
     .service {
         padding: 7rem;
     }
-    .portfolio{
+    .project{
         padding-bottom: 7rem;
     }
     .contact{
@@ -636,11 +636,11 @@ span{
     .service h2{
         margin-bottom: 3rem;
     }
-    .portfolio h2{
+    .project h2{
         margin-bottom: 3rem;
 
     }
-    .portfolio-container{
+    .project-container{
         grid-template-columns: repeat(1, 1fr);
     }
     .service-container .service-box{
@@ -674,7 +674,7 @@ span{
     
 }
 @media(max-width:617px){
-    .portfolio-container{
+    .project-container{
         grid-template-columns: 1fr;
     }
     .home-img img{
