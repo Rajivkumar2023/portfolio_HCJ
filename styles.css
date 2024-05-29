@@ -32,10 +32,12 @@
 html{
     font-size: 62.5%;
     overflow-x: hidden;
+    touch-action: manipulation;
 }
 body{
     background: var(--bg-color);
     color: var(--text-color);
+    touch-action: manipulation;
 }
 section{
     min-height: 100vh;
